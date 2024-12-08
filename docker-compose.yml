@@ -1,0 +1,10 @@
+services:
+  centerface_demo:
+    container_name: centerface_demo
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: centerface_demo
+    volumes:
+      - ./src:/app
+    tty: true
